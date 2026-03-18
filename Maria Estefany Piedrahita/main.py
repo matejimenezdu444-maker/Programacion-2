@@ -7,7 +7,11 @@ Carga = float(input("Ingrese carga de CPU: "))
 Temp = float(input("Ingrese Temperatura del Rack en celsius: "))
 Ce=float(input("ingrese el consumo de energia en watts: "))
 
-os.system("cls")
+# Limpia la consola solo cuando aplica al sistema operativo y al entorno.
+if os.name == "nt":
+    os.system("cls")
+elif os.getenv("TERM"):
+    os.system("clear")
 if Ce > 400:
     exceso = Ce - 400
     print("El exceso de energia que se está consumiendo es de:",exceso)
