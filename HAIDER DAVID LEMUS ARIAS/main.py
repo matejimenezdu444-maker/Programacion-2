@@ -1,4 +1,3 @@
-<<<<<<< HEAD
 import os
 
 # Ingresar los datos
@@ -38,7 +37,6 @@ if cpu >= 90:
     print("Puede recibir", procesos_adicionales, "procesos adicionales antes de colapsar.")
 else:
     print("El servidor aun tiene capacidad disponible.")
-=======
 # Sistema de Monitoreo: Guardian de Infraestructura v1.0
 
 import datetime  # Librería para manejar fecha y hora
@@ -85,9 +83,3 @@ try:
 
     print(f"\nFIN DEL REPORTE PARA {id_servidor} socio.")
 
-except ValueError:
-    print("\n[ERROR]: Entrada inválida. Asegúrese de ingresar valores numéricos correctos socio.")
-
-except Exception as e:
-    print("\n[ERROR INESPERADO SOCIO]:", e)
->>>>>>> refs/remotes/origin/main
